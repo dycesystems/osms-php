@@ -10,11 +10,11 @@ Current version: 2.0.2
 
 Install [Composer](https://getcomposer.org/). Then, do:
 
-    $ composer require ismaeltoe/osms
+    $ composer require dycesystems/osms
 
 ### Without Composer
 
-Simply [download the latest release](https://github.com/ismaeltoe/osms-php/archive/master.zip).
+Simply [download the latest release](https://github.com/dycesystems/osms-php/archive/master.zip).
 
 ## Loading
 
@@ -79,9 +79,9 @@ $senderName = 'Optimus Prime';
 
 $osms->sendSMS($senderAddress, $receiverAddress, $message, $senderName);
 ```
-Check out [examples](https://github.com/ismaeltoe/osms-php/tree/master/examples) for more examples.
+Check out [examples](https://github.com/dycesystems/osms-php/tree/master/examples) for more examples.
 
-CHECK OUT also [Osms.php](https://github.com/ismaeltoe/osms-php/blob/master/src/Osms.php) to see all the methods available. But DON'T MODIFY IT. You can extend the class to add your own stuff.
+CHECK OUT also [Osms.php](https://github.com/dycesystems/osms-php/blob/master/src/Osms.php) to see all the methods available. But DON'T MODIFY IT. You can extend the class to add your own stuff.
 
 ## SSL certificate problem
 
@@ -96,10 +96,6 @@ But it should work on your hosting server, so enable the certificate checking wh
 ## Documentation
 
  * Native API [https://developer.orange.com/apis/sms-ci/getting-started](https://developer.orange.com/apis/sms-ci/getting-started)
-
-## Other Libraries
-
- * [osms-android](https://github.com/ismaeltoe/osms-android)
 
 ## License
 
