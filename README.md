@@ -10,7 +10,7 @@ Current version: 2.0.2
 
 Install [Composer](https://getcomposer.org/). Then, do:
 
-    $ composer require dycesystems/osms
+    $ composer require dyce/osms
 
 ### Without Composer
 
