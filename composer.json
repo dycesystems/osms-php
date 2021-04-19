@@ -1,5 +1,5 @@
 {
-	"name": "dycesystems/osms",
+	"name": "dyce/osms",
 	"description": "PHP library wrapper of the Orange SMS API.",
 	"keywords": [
         "php", "curl", "api", "sms", "client", "http client", "json", "requests", "rest", 
