@@ -286,11 +286,17 @@ class Osms
             } elseif (!empty($response['message'])) {
                 $errorMessage = $response['message'];
             } elseif (!empty($response['requestError']['serviceException'])) {
-                $errorMessage = $response['requestError']['serviceException']['text']
-                    . ' ' . $response['requestError']['serviceException']['variables'];
+                $errorMessage = $response['requestError']['serviceException']['text'];
+                $errorVariables = $response['requestError']['serviceException']['variables'];
+                foreach ($errorVariables as $key => $errorVariable) {
+                    $errorMessage = str_replace('%'.strtoupper($key+1), $errorVariable, $errorMessage);
+                }
             } elseif (!empty($response['requestError']['policyException'])) {
-                $errorMessage = $response['requestError']['policyException']['text']
-                    . ' ' . $response['requestError']['policyException']['variables'];
+                $errorMessage = $response['requestError']['policyException']['text'];
+                $errorVariables = $response['requestError']['policyException']['variables'];
+                foreach ($errorVariables as $key => $errorVariable) {
+                    $errorMessage = str_replace('%'.strtoupper($key+1), $errorVariable, $errorMessage);
+                }
             }
 
             return array('error' => $errorMessage);
