@@ -2,7 +2,7 @@
 
 A PHP library to access Orange SMS API.
 
-Current version: 2.0.2
+Current version: 2.0.3
 
 ## Installation
 
